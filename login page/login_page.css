@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'gamerfont';
+    src: url(./fonts/gamerfont/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Russo';
+    src: url(./fonts/russoone/RussoOne-Regular.ttf);
+}
+
+.main-bg{
+    position: relative;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#bg-video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-position: absolute;
+    object-fit: cover;
+
+}   
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+   
+    margin: -400px 0 0 0;
+    font-size: 40px;
+    font-family: gamerfont;
+    font-stretch: semi-expanded;
+    position: absolute;
+    padding: auto;
+}
+
+.container_credentials{
+    width: 30%;
+    height: 90%;
+    position: absolute;  
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(169, 4, 4);
+    border-radius: 40px;
+    background-color: #00000086;
+    margin: 0;
+    padding: 0;
+    
+}
+
+form{
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+input{
+    outline: 0;
+    border-width: 0 0 2px ;
+    border-color: white;
+    background: transparent;
+    margin: 20px 0 50px ;
+    padding: 0 40px 10px 40px;
+    text-align: center;    
+    color: rgb(242, 238, 238);
+    font-size: 18px;
+    font-family: Russo;
+}
+
+h2{
+    color: aliceblue;
+
+}
+
+::placeholder { 
+    color: rgba(187, 179, 179, 0.732);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: #7b1da6b7;
+    border: none;
+    outline: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 20px 0 10px ;
+    
+}
+
+p{
+    color: aliceblue;
+    margin-bottom: -100px;
+    margin-top: -3px;
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    font-family:arial black;
+ 
+    background-image: 
+        linear-gradient(to right,black, white,yellow); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 200s linear infinite;
+  
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 4100vh;
+    }
+}
